@@ -33,9 +33,4 @@ public class Person {
     	DateFormat formatter=new SimpleDateFormat("dd.MM.yyyy");
     	System.out.println(firstName + "\t" + lastName + "\t" + formatter.format(birthday));
     }
-    	//Metod koga zahtijeva interface Comparable
-    public int compareTo(Person p)
-    {
-    	return fName().compareTo(p.fName());
-    }
 }
