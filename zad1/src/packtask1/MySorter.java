@@ -6,7 +6,7 @@ public class MySorter {
 	public static void printAll(List<Person> contacts) {
 		int i = 1;
 		for (Person p : contacts) {
-			System.out.println(i + "." + '\t' + p.toString());
+			System.out.println(i + "." + '\t' + p);
 			++i;
 		}
 	}
