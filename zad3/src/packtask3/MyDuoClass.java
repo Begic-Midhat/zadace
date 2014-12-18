@@ -11,8 +11,8 @@ public class MyDuoClass {
 		return this.message;
 	}
 
-	public void setMessage(String msg) {
-		this.message = msg;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public static MyDuoClass getInstance() {

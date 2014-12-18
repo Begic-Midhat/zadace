@@ -16,20 +16,20 @@ public class Person {
 		return instance;
 	}
 
-	public Person withFirstName(String fName) {
-		this.firstName = fName;
+	public Person withFirstName(String firstName) {
+		this.firstName = firstName;
 		return this;
 	}
 
-	public Person withLastName(String lName) {
-		this.lastName = lName;
+	public Person withLastName(String lastName) {
+		this.lastName = lastName;
 		return this;
 	}
 
-	public Person bornOn(String bd) throws ParseException {
+	public Person bornOn(String birthday) throws ParseException {
 		DateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
-		if (bd != null) {
-			this.birthday = formatter.parse(bd);
+		if (birthday != null) {
+			this.birthday = formatter.parse(birthday);
 		} else {
 			this.birthday = null;
 		}
